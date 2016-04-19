@@ -1,0 +1,20 @@
+{
+  "name": "Click2Callback",
+  "version": "0.0.0",
+  "authors": [
+    "Marcello Federico <marcellof@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ng-intl-tel-input": "~1.4.0",
+    "angular-smart-table": "~2.1.8"
+  }
+}
