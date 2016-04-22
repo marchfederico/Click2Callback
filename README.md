@@ -1,7 +1,7 @@
 # Click2Callback
 
 A sample Tropo Click2Callback Website.
-
+![alt text](https://raw.githubusercontent.com/marchfederico/Click2Callback/master/TropoScript/c2c.png "")
 To get started use the Click2Callback.js script in the TropoScript directory to create an aplication on Tropo.com. Make
 note of the voice token after the application is created.
 
