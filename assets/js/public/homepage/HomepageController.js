@@ -1,4 +1,4 @@
-angular.module('HomepageModule').controller('HomepageController', ['$scope', '$http', 'toastr', function($scope, $http, toastr){
+angular.module('HomepageModule').controller('HomepageController', ['$scope', '$http', 'toastr','$window', function($scope, $http, toastr,$window){
 
 	// set-up loginForm loading state
 	$scope.loginForm = {
@@ -17,7 +17,7 @@ angular.module('HomepageModule').controller('HomepageController', ['$scope', '$h
     })
     .then(function onSuccess (){
       // Refresh the page now that we've been logged in.
-      window.location = '/';
+      $window.location.href = '/';
     })
     .catch(function onError(sailsResponse) {
 

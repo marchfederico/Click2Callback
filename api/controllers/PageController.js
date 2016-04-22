@@ -11,6 +11,8 @@ module.exports = {
 
     // If not logged in, show the public view.
     if (!req.session.me) {
+      console.log('not logged in')
+      console.dir(req.session)
       return res.view('homepage');
     }
 

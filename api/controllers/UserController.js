@@ -41,9 +41,13 @@ module.exports = {
 
           // Store user id in the user session
           req.session.me = user.id;
-          // All done- let the client know that everything worked.
-          return res.ok();
-        }
+          req.session.save(function(err,resp){
+            // All done- let the client know that everything worked.
+            console.log(resp)
+            return res.ok();
+          })
+
+          }
       });
     });
 
